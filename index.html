@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<style>
+    
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: lightgray;
+        border: 1px solid black;
+        display: none;
+    }
+    
+    label {
+        border: 1px solid black;
+    }
+    
+</style>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            $("#jeden_button").click(function(){
+                $("div").hide();
+                $("#jeden").show(100);
+                $("label").css("background-color", "white");
+                $("#jeden_button").css("background-color", "green");
+            })
+            $("#dwa_button").click(function(){
+                $("div").hide();
+                $("#dwa").show(500);
+                $("label").css("background-color", "white");
+                $("#dwa_button").css("background-color", "green");
+            })
+            $("#trzy_button").click(function(){
+                $("div").hide();
+                $("#trzy").show();
+                $("label").css("background-color", "white");
+                $("#trzy_button").css("background-color", "green");
+            })
+        })
+    </script>
+    
+<title>jquery</title>
+<meta charset="UTF-8"/>
+</head>
+<body>
+    <label id="jeden_button">jeden</label>
+    <label id="dwa_button">dwa</label>
+    <label id="trzy_button">trzy</label>
+    <div id="jeden">jeden</div>
+    <div id="dwa">dwa</div>
+    <div id="trzy">trzy</div>
+</body>
+</html> 
